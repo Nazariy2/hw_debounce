@@ -26,15 +26,15 @@
 
 const box = document.getElementById('box');
 
-// Функція переміщення
+
 function moveBox(e) {
   const x = e.clientX;
   const y = e.clientY;
   box.style.transform = `translate(${x}px, ${y}px)`;
 }
 
-// Обгортка debounce з lodash (100мс)
+
 const debouncedMove = _.debounce(moveBox, 100);
 
-// Прив'язуємо рух миші до обробника
+
 document.addEventListener('mousemove', debouncedMove);

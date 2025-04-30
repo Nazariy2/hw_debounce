@@ -19,5 +19,5 @@
     height: 50px;
     background-color: red;
     position: absolute;
-    transition: transform 0.1s linear; /* Плавність переміщення */
+    transition: transform 0.1s linear; 
   }
